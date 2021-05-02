@@ -1,9 +1,10 @@
 import './App.css';
+import Icon from "./components/icons"
 
 function App() {
   return (
     <div className="App">
-      <h1> Hello World!</h1>
+      <Icon />
     </div>
   );
 }
