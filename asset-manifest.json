@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/lco-tictacto/static/css/main.163faeb7.chunk.css",
-    "main.js": "/lco-tictacto/static/js/main.1f611df9.chunk.js",
-    "main.js.map": "/lco-tictacto/static/js/main.1f611df9.chunk.js.map",
+    "main.css": "/lco-tictacto/static/css/main.8d609fc6.chunk.css",
+    "main.js": "/lco-tictacto/static/js/main.38c1235a.chunk.js",
+    "main.js.map": "/lco-tictacto/static/js/main.38c1235a.chunk.js.map",
     "runtime-main.js": "/lco-tictacto/static/js/runtime-main.52d1ddf8.js",
     "runtime-main.js.map": "/lco-tictacto/static/js/runtime-main.52d1ddf8.js.map",
     "static/css/2.1a63a915.chunk.css": "/lco-tictacto/static/css/2.1a63a915.chunk.css",
@@ -10,14 +10,14 @@
     "static/js/2.a002864c.chunk.js.map": "/lco-tictacto/static/js/2.a002864c.chunk.js.map",
     "index.html": "/lco-tictacto/index.html",
     "static/css/2.1a63a915.chunk.css.map": "/lco-tictacto/static/css/2.1a63a915.chunk.css.map",
-    "static/css/main.163faeb7.chunk.css.map": "/lco-tictacto/static/css/main.163faeb7.chunk.css.map",
+    "static/css/main.8d609fc6.chunk.css.map": "/lco-tictacto/static/css/main.8d609fc6.chunk.css.map",
     "static/js/2.a002864c.chunk.js.LICENSE.txt": "/lco-tictacto/static/js/2.a002864c.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.52d1ddf8.js",
     "static/css/2.1a63a915.chunk.css",
     "static/js/2.a002864c.chunk.js",
-    "static/css/main.163faeb7.chunk.css",
-    "static/js/main.1f611df9.chunk.js"
+    "static/css/main.8d609fc6.chunk.css",
+    "static/js/main.38c1235a.chunk.js"
   ]
 }
