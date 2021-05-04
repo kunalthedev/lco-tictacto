@@ -10,7 +10,7 @@ const Icon = ({ name }) => {
       <FaTimes className="icon" />;
       break;
     default:
-      <FaPen className="icon" />;
+      <FaPen className="icon" height="100px" width="100px" fill="white"/>;
       break;
   }
 };

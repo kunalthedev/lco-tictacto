@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import "./App.css";
 import Icon from "./components/Icon";
-
+// import { FaTimes, FaPen, FaRegCircle } from "react-icons/fa";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -13,6 +13,8 @@ const itemArray = new Array(9).fill("empty");
 const App = () => {
   const [isCross, setIsCross] = useState(false);
   const [winMessage, setWinMessage] = useState("");
+  // const [cardColor, setCardColor] = useState("warning")
+  const [selected, setSelected] = useState("")
 
   const reloadGame = () => {
     setIsCross(false);
@@ -81,6 +83,13 @@ const App = () => {
     if(itemArray[itemNumber] === "empty"){
       itemArray[itemNumber] = isCross ? "cross" : "circle";
       setIsCross(!isCross);
+      setSelected(itemNumber)
+      // if (selected==="circle") {
+      //   setCardColor("primary")
+      // } else  {
+      //   setCardColor("success")
+      // }
+      
     }
     else{
       return toast("Already Filled", {type:"error"})
@@ -102,15 +111,20 @@ const App = () => {
             <Button onClick={reloadGame} color="success" block className="mb-3">Reload Game</Button>
           </div>
         ) : (
-          <h1 className="text-center text-warning">
+          <h1 className="text-center text-success">
             {isCross? "Cross" : "Circle"} Turns
           </h1>
         )}
           <div className="grid">
             {itemArray.map((item, index) => (
-              <Card onClick={() => changeItem(index) } color="warning">
+              <Card onClick={() => changeItem(index) } style={{
+                  backgroundColor: selected === index ? "#26A042" : "#5bc0de",
+                  color: selected ===index ? "white" : "red",
+                  // backgroundColor: selected===index?{cardColor}: ""
+                }}  >
                 <CardBody className="box">
-                  <Icon name={item} />
+                  <Icon name={item} 
+                  height="50px" width= "50px" />
                 </CardBody>
               </Card>
             ))}
