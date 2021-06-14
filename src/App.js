@@ -118,6 +118,7 @@ const App = () => {
           <div className="grid">
             {itemArray.map((item, index) => (
               <Card onClick={() => changeItem(index) } style={{
+                
                   backgroundColor: selected === index ? "#26A042" : "#5bc0de",
                   color: selected ===index ? "white" : "red",
                   // backgroundColor: selected===index?{cardColor}: ""
